@@ -1,0 +1,4 @@
+baseURL = 'https://shimentai.xyz/'
+languageCode = 'en-us'
+title = 'Shimentai'
+theme = 'congo'
