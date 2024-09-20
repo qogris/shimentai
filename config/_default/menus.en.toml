@@ -29,11 +29,11 @@
   name = "Projects"
   pageRef = "projects"
   weight = 40
-  pre = '<i class="fa fa-heart"></i>'
+ #pre = '<i class="fa fa-heart"></i>'
 
 [[main]]
   name = "GitHub"
-  url = "https://github.com/qogris/hugo-shimentai"
+  url = "https://github.com/qogris/shimentai"
   weight = 98
   [main.params]
     icon = "github"

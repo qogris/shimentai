@@ -9,11 +9,11 @@ title = "Shimentai"
 [params]
   dateFormat = "2 January 2006"
 
-  mainSections = ["Posts", "Projects"]
+  mainSections = ["posts", "projects"]
   description = "A simple and elegant blog"
 
 [params.author]
-  name = "Hflyu"
+  name = "hflyu"
   image = "img/haifeng.avatar.jpg"
   headline = "An INFP dad bod"
   bio = "A middle-aged guy who's out of work at the moment, but always busy picking up fun skills like playing the piano, coding, and doing DIY projects."
