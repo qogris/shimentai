@@ -4,7 +4,7 @@ languageDirection = "ltr"
 weight = 1
 
 title = "Shimentai"
-# copyright = "Copy, _right?_ :thinking_face:"
+copyright = "Copy, _right?_ :thinking_face:"
 
 [params]
   dateFormat = "2 January 2006"
@@ -14,9 +14,9 @@ title = "Shimentai"
 
 [params.author]
   name = "hflyu"
-  image = "img/haifeng.avatar.jpg"
+  image = "img/avatar.jpg"
   headline = "An INFP dad bod"
-  bio = "A middle-aged guy who's out of work at the moment, but always busy picking up fun skills like playing the piano, coding, and doing DIY projects."
+  bio = "A middle-aged guy who's out of work at the moment, always busy picking up fun skills like playing the piano, coding, and doing DIY projects."
   links = [
      { email = "mailto:haifeng.lyu@gmail.com" },
   #   { link = "https://link-to-some-website.com/" },
