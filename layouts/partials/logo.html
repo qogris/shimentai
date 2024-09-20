@@ -6,8 +6,8 @@
       <!-- prettier-ignore-attribute -->
       <img
         src="{{ $logo.RelPermalink }}"
-        width="{{ div $logo.Width 8 }}"
-        height="{{ div $logo.Height 8 }}"
+        width="{{ div $logo.Width 10 }}"
+        height="{{ div $logo.Height 10 }}"
         class="max-h-[10rem] max-w-[10rem] object-scale-down object-left
         {{ if $logo_dark }}hidden dark:flex{{ end }}"
         alt="{{ .Site.Title }}"
@@ -15,8 +15,8 @@
       {{- if $logo_dark }}
         <img
           src="{{ $logo_dark.RelPermalink }}"
-          width="{{ div $logo_dark.Width 8 }}"
-          height="{{ div $logo_dark.Height 8 }}"
+          width="{{ div $logo_dark.Width 10 }}"
+          height="{{ div $logo_dark.Height 10 }}"
           class="max-h-[10rem] max-w-[10rem] object-scale-down object-left dark:hidden"
           alt="{{ .Site.Title }}"
         />

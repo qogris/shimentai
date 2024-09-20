@@ -21,8 +21,8 @@ fingerprintAlgorithm = "sha256"
 
 [header]
   layout = "basic" # valid options: basic, hamburger, hybrid, custom
-  #logo = "img/shimentai.minimal.text.pb.reversal.png"
-  #logoDark = "img/shimentai.minimal.text.pb.png"
+  logo = "img/shimentai.minimal.PB.png"
+  logoDark = "img/shimentai.minimal.PB.png"
   showTitle = true
 
 [footer]
@@ -57,7 +57,7 @@ fingerprintAlgorithm = "sha256"
 
 [list]
   showBreadcrumbs = false
-  showSummary = false
+  showSummary = true
   showTableOfContents = false
   showTaxonomies = false
   groupByYear = true
