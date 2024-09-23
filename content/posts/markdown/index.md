@@ -1,9 +1,10 @@
 ---
 title: "Markdown"
-date: 2024-09-19
+date: 2024-09-19T09:42:44Z
 description: "Sample article showcasing basic Markdown syntax and formatting for HTML elements."
 summary: "This article offers a sample of basic Markdown formatting that can be used in Congo, also it shows how some basic HTML elements are decorated."
-tags: ["markdown", "css", "html", "sample"]
+tags: ["markdown", "css", "html"]
+categories: ["Reference"]
 ---
 
 This article offers a sample of basic Markdown formatting that can be used in Congo, also it shows how some basic HTML elements are decorated.
