@@ -2,12 +2,16 @@
 # Refer to the theme docs for more details about each of these parameters.
 # https://jpanther.github.io/congo/docs/getting-started/
 
-baseURL = "http://shimentai.xyz/"
+baseURL = "https://shimentai.xyz/"
 defaultContentLanguage = "en"
 
 enableRobotsTXT = true
 pagination.pagerSize = 10
 summaryLength = 10
+
+[services]
+  [services.disqus]
+    shortname = 'shimentai'
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
