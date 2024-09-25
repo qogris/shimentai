@@ -1,12 +1,19 @@
 ---
-title: "Disqus Configuration"
+title: Disqus Configuration
 date: 2024-09-24T10:25:59Z
 lastmod: 2024-09-24T10:25:59Z
 draft: false
-description: "Disqus Configuration"
-tags: ["disqus","congo","hugo","patrial","template"]
-categories: ["Reference"]
-summary: "To ensure that the Disqus comment system displays correctly, you can follow these steps"
+description: Disqus Configuration
+tags:
+   - disqus
+   - congo
+   - hugo
+   - patrial
+   - template
+categories:
+   - Reference
+summary: To ensure that the Disqus comment system displays correctly, you can follow these steps
+slug: disqus-configuration
 ---
 
 {{<alert "lightbulb">}}
