@@ -1,13 +1,19 @@
 ---
-title: "我的人生四面体"
+title: 我的人生四面体
 date: 2024-09-21T06:59:12Z
 lastmod: 2024-09-23T06:59:12Z
 draft: false
 isCJKLanguage: true
-description: "About Shimentai"
-tags: ["about","writting"]
-categories: ["Expression","Reflection","Growth"]
-summary: "四面体成为一套成长系概念的原点来自于一位知己挚友"
+description: About Shimentai
+tags:
+    - about
+    - writting
+categories:
+    - Expression
+    - Reflection
+    - Growth
+summary: 四面体成为一套成长系概念的原点来自于一位知己挚友
+slug: 我的人生四面体
 ---
 
 "四面体"成为一套成长系概念的原点来自于一位知己挚友的创意贡献！

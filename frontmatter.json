@@ -4,7 +4,7 @@
     {
       "name": "posts",
       "pageBundle": true,
-      "previewPath": "[[workspace]]/content/posts/",
+      "previewPath": "/posts",
       "fields": [
         {
           "title": "title",
@@ -65,7 +65,7 @@
     {
       "name": "projects",
       "pageBundle": true,
-      "previewPath": "[[workspace]]/content/projects/",
+      "previewPath": "/projects",
       "fields": [
         {
           "title": "title",
@@ -125,11 +125,15 @@
   "frontMatter.content.pageFolders": [
     {
       "title": "posts",
-      "path": "[[workspace]]/content/posts"
+      "path": "[[workspace]]/content/posts",
+      "previewPath": "/posts",
+      "trailingSlash": false
     },
     {
       "title": "projects",
-      "path": "[[workspace]]/content/projects"
+      "path": "[[workspace]]/content/projects",
+      "previewPath": "/projects",
+      "trailingSlash": false
     }
   ],
   "frontMatter.git.enabled": true

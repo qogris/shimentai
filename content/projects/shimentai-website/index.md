@@ -21,6 +21,7 @@ categories:
 authors:
   - haifeng
   - qogris
+slug: shimentai-powered-hugo
 ---
 
 要使用 **Hugo** 和 **Congo Theme** 来建立个人网站，以下是详细的步骤：
