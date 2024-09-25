@@ -3,8 +3,8 @@
   "frontMatter.taxonomy.contentTypes": [
     {
       "name": "posts",
-      "pageBundle": true,
-      "previewPath": "/posts",
+      "pageBundle": false,
+      "previewPath": "posts",
       "fields": [
         {
           "title": "title",
@@ -64,8 +64,8 @@
     },
     {
       "name": "projects",
-      "pageBundle": true,
-      "previewPath": "/projects",
+      "pageBundle": false,
+      "previewPath": "projects",
       "fields": [
         {
           "title": "title",
@@ -126,14 +126,14 @@
     {
       "title": "posts",
       "path": "[[workspace]]/content/posts",
-      "previewPath": "/posts",
-      "trailingSlash": false
+      "previewPath": "posts",
+      "trailingSlash": true
     },
     {
       "title": "projects",
       "path": "[[workspace]]/content/projects",
-      "previewPath": "/projects",
-      "trailingSlash": false
+      "previewPath": "projects",
+      "trailingSlash": true
     }
   ],
   "frontMatter.git.enabled": true
