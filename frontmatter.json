@@ -2,46 +2,104 @@
   "$schema": "https://frontmatter.codes/frontmatter.schema.json",
   "frontMatter.taxonomy.contentTypes": [
     {
-      "name": "default",
-      "pageBundle": false,
-      "previewPath": null,
+      "name": "posts",
+      "pageBundle": true,
+      "previewPath": "[[workspace]]/content/posts/",
       "fields": [
         {
-          "title": "Title",
+          "title": "title",
           "name": "title",
           "type": "string"
         },
         {
-          "title": "Description",
-          "name": "description",
-          "type": "string"
-        },
-        {
-          "title": "Publishing date",
+          "title": "date",
           "name": "date",
-          "type": "datetime",
-          "default": "{{now}}",
-          "isPublishDate": true
+          "type": "datetime"
         },
         {
-          "title": "Content preview",
-          "name": "preview",
-          "type": "image"
-        },
-        {
-          "title": "Is in draft",
+          "title": "draft",
           "name": "draft",
           "type": "draft"
         },
         {
-          "title": "Tags",
+          "title": "description",
+          "name": "description",
+          "type": "string"
+        },
+        {
+          "title": "summary",
+          "name": "summary",
+          "type": "string"
+        },
+        {
+          "title": "tags",
           "name": "tags",
           "type": "tags"
         },
         {
-          "title": "Categories",
+          "title": "categories",
           "name": "categories",
           "type": "categories"
+        },
+        {
+          "title": "authors",
+          "name": "authors",
+          "type": "choice",
+          "choices": [
+            "haifeng",
+            "qogris"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "projects",
+      "pageBundle": true,
+      "previewPath": "[[workspace]]/content/projects/",
+      "fields": [
+        {
+          "title": "title",
+          "name": "title",
+          "type": "string"
+        },
+        {
+          "title": "date",
+          "name": "date",
+          "type": "datetime"
+        },
+        {
+          "title": "draft",
+          "name": "draft",
+          "type": "draft"
+        },
+        {
+          "title": "description",
+          "name": "description",
+          "type": "string"
+        },
+        {
+          "title": "summary",
+          "name": "summary",
+          "type": "string"
+        },
+        {
+          "title": "tags",
+          "name": "tags",
+          "type": "tags"
+        },
+        {
+          "title": "categories",
+          "name": "categories",
+          "type": "categories"
+        },
+        {
+          "title": "authors",
+          "name": "authors",
+          "type": "choice",
+          "choices": [
+            "haifeng",
+            "qogris"
+          ]
         }
       ]
     }
@@ -51,20 +109,12 @@
   "frontMatter.preview.host": "http://localhost:1313",
   "frontMatter.content.pageFolders": [
     {
-      "title": "content",
-      "path": "[[workspace]]/content"
-    },
-    {
-      "title": "projects",
-      "path": "[[workspace]]/content/projects"
-    },
-    {
       "title": "posts",
       "path": "[[workspace]]/content/posts"
     },
     {
-      "title": "content",
-      "path": "[[workspace]]/content"
+      "title": "projects",
+      "path": "[[workspace]]/content/projects"
     }
   ],
   "frontMatter.git.enabled": true
