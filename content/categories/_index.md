@@ -2,7 +2,6 @@
 title: Categories 
 ---
 
-Congo has full support for Hugo taxonomies and will adapt to any taxonomy set up. Taxonomy listings like this one also support custom content to be displayed above the list of terms.
-
+Navigate through broad content categories to find posts and projects grouped by subject. Click on a category to explore related topics in depth.
 
 ---

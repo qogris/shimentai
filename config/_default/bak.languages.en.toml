@@ -11,7 +11,8 @@ copyright = "&copy; 2024 Shimentai"
   mainSections = ["posts", "projects"]
   description = "A simple and elegant blog"
 
-[params.author]
+[params.authors]
+  [params.authors.haifeng]	
     name = "haifeng"
     image = "img/avatar.jpg"
     headline = "It's Haifeng Lyu"
@@ -63,3 +64,13 @@ copyright = "&copy; 2024 Shimentai"
   #   { youtube = "https://youtube.com/username" },
     ]
 
+  [params.authors.qogris]	
+    name = "qogris"
+    image = "img/avatar.jpg"
+    bio = "Passionate about exploring various configurations."
+    links = [
+      { email = "mailto:qogris@gmail.com" },
+      { github = "https://github.com/qogris" },
+      { instagram = "https://instagram.com/qogris" },
+      { telegram = "https://t.me/qogris" },
+    ]		

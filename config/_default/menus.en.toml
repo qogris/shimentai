@@ -29,7 +29,6 @@
   name = "Projects"
   pageRef = "projects"
   weight = 40
- #pre = '<i class="fa fa-heart"></i>'
 
 [[main]]
   name = "GitHub"

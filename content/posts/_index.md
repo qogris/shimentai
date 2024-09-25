@@ -11,6 +11,6 @@ cascade:
 {{< lead >}}
 _The act of creation deepens our self-awareness and ignites the spark of imagination._
 {{< /lead >}}
-{{< figure src="undraw_posts_re_ormv.svg" class="float-left mt-6 max-w-prose" >}}
+{{< figure src="undraw_post_shimentai.svg" class="float-left mt-6 max-w-prose" >}}
 
 ---

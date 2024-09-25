@@ -1,11 +1,13 @@
 ---
-title: "Shimentai - Powered by Hugo&Congo"
+title: "Shimentai - Powered by Hugo"
 date: 2024-09-20T09:42:44Z
 draft: false
 description: "learn to use static website generator and themes configration"
 summary: "Building a simple and elegant personal website with Hugo and Congo."
-tags: ["static-site","blog-engine","go","html","css","Hugo","Congo","theme","hugo-theme","emoji"]
+tags: ["static-site","blog-engine","go","html","css","Hugo","Congo","theme","hugo-theme","emoji","shortcode"]
 categories: ["Expression"]
+authors: ["haifeng","qogris"]
+
 ---
 
 

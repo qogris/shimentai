@@ -1,7 +1,7 @@
 ---
 title: Projects
 ---
-I am currently working on a variety of projects that reflect my diverse interests and goals. These initiatives span across different domains, from innovative technological developments to personal growth endeavors. 
-{{< figure src="undraw_project_completed_re_jr7u.svg" class="float-left mt-6 max-w-prose" >}}
+I'm currently engaged in various projects that reflect my wide-ranging interests, from technological innovations to personal growth pursuits, spanning multiple domains.  
+{{< figure src="undraw_project_completed_shimentai.svg" class="float-left mt-6 max-w-prose" >}}
 
 ---
