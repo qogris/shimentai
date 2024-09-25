@@ -1,4 +1,6 @@
+
 ---
+
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
 lastmod: {{ .Date }}
@@ -9,4 +11,3 @@ categories: ["Challenge",""]
 summary: ""
 
 ---
-
