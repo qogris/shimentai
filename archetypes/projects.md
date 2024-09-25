@@ -2,12 +2,14 @@
 ---
 
 title: "{{ replace .Name "-" " " | title }}"
-date: {{ .Date }}
-lastmod: {{ .Date }}
-draft: false
+date: "{{ .Date }}"
+lastmod: "{{ .Date }}"
+draft: true
 description: ""
-tags: ["",""]
-categories: ["Challenge",""]
+tags: []
+categories: ["Challenge"]
 summary: ""
+authors: []
+isCJKLanguage: false
 
 ---

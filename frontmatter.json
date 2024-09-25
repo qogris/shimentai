@@ -17,6 +17,11 @@
           "type": "datetime"
         },
         {
+          "title": "lastmod",
+          "name": "lastmod",
+          "type": "datetime"
+        },
+        {
           "title": "draft",
           "name": "draft",
           "type": "draft"
@@ -49,6 +54,11 @@
             "haifeng",
             "qogris"
           ]
+        },
+        {
+          "title": "isCJKLanguage",
+          "name": "isCJKLanguage",
+          "type": "string"
         }
       ]
     },
@@ -100,6 +110,11 @@
             "haifeng",
             "qogris"
           ]
+        },
+        {
+          "title": "isCJKLanguage",
+          "name": "isCJKLanguage",
+          "type": "string"
         }
       ]
     }
