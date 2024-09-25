@@ -53,6 +53,18 @@
     {
       "title": "content",
       "path": "[[workspace]]/content"
+    },
+    {
+      "title": "projects",
+      "path": "[[workspace]]/content/projects"
+    },
+    {
+      "title": "posts",
+      "path": "[[workspace]]/content/posts"
+    },
+    {
+      "title": "content",
+      "path": "[[workspace]]/content"
     }
   ],
   "frontMatter.git.enabled": true

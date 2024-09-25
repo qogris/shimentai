@@ -6,8 +6,7 @@ tags: ["shortcode","youtube"]
 description: "testing Everything about Hugo"
 ---
 
-Snoop Doog Fit. McConaughey Singing On the Road Again 
+Snoop Doog Fit. McConaughey Singing On the Road Again
 {{< youtube eUNnDwA4xKA >}}
 
 [About Shimentai]({{< ref "/posts/about-shimentai/index.md" >}} "About Shimentai")
-

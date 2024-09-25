@@ -1,4 +1,3 @@
-
 ---
 title: "Emoji Shortcodes"
 date: 2024-09-19T15:20:19Z
@@ -10,4 +9,3 @@ tags: ["emojis","shortcodes","html","css","theme"]
 _build:
   render: "never"
 ---
-
