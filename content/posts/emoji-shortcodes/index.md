@@ -6,6 +6,8 @@ summary: "Include emoji shortcodes in your Markdown or templates."
 showReadingTime: true
 categories: ["Reference"]
 tags: ["emojis","shortcodes","html","css","theme"]
+slug: emoji-shortcodes
 _build:
   render: "never"
+
 ---

@@ -1,9 +1,12 @@
 ---
-title: "Test Config"
+title: Test Config
 date: 2024-09-24T05:33:07Z
 draft: true
-tags: ["shortcode","youtube"]
-description: "testing Everything about Hugo"
+tags:
+    - shortcode
+    - youtube
+description: testing Everything about Hugo
+slug: test-config
 ---
 
 Snoop Doog Fit. McConaughey Singing On the Road Again

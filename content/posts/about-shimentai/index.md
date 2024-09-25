@@ -13,6 +13,7 @@ categories:
     - Reflection
     - Growth
 summary: 四面体成为一套成长系概念的原点来自于一位知己挚友
+slug: about-shimentai
 ---
 
 "四面体"成为一套成长系概念的原点来自于一位知己挚友的创意贡献！
