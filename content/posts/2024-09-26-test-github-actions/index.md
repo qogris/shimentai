@@ -12,3 +12,4 @@ isCJKLanguage: false
 slug: test-github-actions
 ---
 test Deploying Hugo remotely with Github Actions.
+udpate: reset Github secret Keys.
