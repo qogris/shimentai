@@ -136,6 +136,6 @@
       "trailingSlash": false
     }
   ],
-  "frontMatter.git.enabled": true,
+  "frontMatter.git.enabled": false,
   "frontMatter.dashboard.openOnStart": true
 }
