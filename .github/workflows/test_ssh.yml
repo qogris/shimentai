@@ -3,11 +3,11 @@ name: Test SSH Connection
 on:
   push:
     branches:
-      - main
+      - main  # 或其他你想测试的分支
 
 jobs:
   ssh-test:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest  # 使用 GitHub 提供的 Ubuntu Runner
 
     steps:
       - name: Checkout code
@@ -19,4 +19,4 @@ jobs:
           mkdir -p ~/.ssh
           echo "${{ secrets.REMOTE_PRIVATE_KEY }}" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
-          ssh -o StrictHostKeyChecking=no ${{ secrets.REMOTE_USER }}@${{ secrets.REMOTE_HOST }} "echo 'SSH connection successful!'"
+          ssh -o StrictHostKeyChecking=no -i ~/.ssh/id_rsa ${{ secrets.REMOTE_USER }}@${{ secrets.REMOTE_HOST }} "echo 'SSH connection successful!'"
