@@ -19,9 +19,7 @@ slug: setting-selinux-context
 ---
 By default, SELinux restricts Nginx from accessing files and directories outside of specific locations (like `/var/www`). To let Nginx access a folder, you'll need to apply the correct SELinux labels.
 
-Here’s a step-by-step guide:
-
-### 0. **Check SELinux Status**
+### **Check SELinux Status**
 
 First, check the current status of SELinux to ensure it is enabled:
 
@@ -29,7 +27,7 @@ First, check the current status of SELinux to ensure it is enabled:
 sestatus
 ```
 
-If the status is `enforcing`, configuration will be required.
+If the status is `enforcing`, configuration will be required. Here’s a step-by-step guide:
 
 ### 1. **Check the SELinux Context**
 
