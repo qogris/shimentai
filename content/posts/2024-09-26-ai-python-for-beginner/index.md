@@ -20,4 +20,4 @@ slug: ai-python-beginners
 
 {{< bilibili BV1oxpKefEvM >}}
 
-{{< icon "coffee">}}[Online Course](https://learn.deeplearning.ai/courses/ai-python-for-beginners/lesson/1/introduction)
+{{< icon "coffee">}} [Online Course in Deeplearning.AI](https://learn.deeplearning.ai/courses/ai-python-for-beginners/lesson/1/introduction)
