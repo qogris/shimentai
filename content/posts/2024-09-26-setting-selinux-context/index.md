@@ -2,7 +2,7 @@
 title: Setting SELinux Context
 date: 2024-09-26T08:04:49.187Z
 lastmod: 2024-09-26T08:04:49.187Z
-draft: true
+draft: false
 description: Setting the correct SELinux context to allow Nginx to access and serve content from non-root directories while maintaining SELinux security.
 summary: Setting the correct SELinux context to allow Nginx to access and serve content from non-root directories while maintaining SELinux security.
 tags:
@@ -21,7 +21,7 @@ By default, SELinux restricts Nginx from accessing files and directories outside
 
 Here’s a step-by-step guide:
 
-## 0. Check SELinux Status
+### 0. **Check SELinux Status**
 
 First, check the current status of SELinux to ensure it is enabled:
 
