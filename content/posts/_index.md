@@ -12,4 +12,5 @@ cascade:
 _The act of creation deepens our self-awareness and ignites the spark of imagination._
 {{< /lead >}}
 {{< figure src="undraw_post_shimentai.svg" class="float-left mt-6 w-full h-auto" >}}
+
 ---
