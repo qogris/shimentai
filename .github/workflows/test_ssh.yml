@@ -1,22 +1,16 @@
-name: Test SSH Connection
-
-on:
-  push:
-    branches:
-      - main  # 或其他你想测试的分支
-
+name: remote ssh command
+on: [push]
 jobs:
-  ssh-test:
-    runs-on: ubuntu-latest  # 使用 GitHub 提供的 Ubuntu Runner
 
+  build:
+    name: Build
+    runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      - name: Test SSH Connection
-        run: |
-          echo "Testing SSH connection to remote server..."
-          mkdir -p ~/.ssh
-          echo "${{ secrets.REMOTE_PRIVATE_KEY }}" > ~/.ssh/id_rsa
-          chmod 600 ~/.ssh/id_rsa
-          ssh -o StrictHostKeyChecking=no -i ~/.ssh/id_rsa ${{ secrets.REMOTE_USER }}@${{ secrets.REMOTE_HOST }} "echo 'SSH connection successful!'"
+    - name: executing remote ssh commands using password
+      uses: appleboy/ssh-action@v1.0.3
+      with:
+        host: ${{ secrets.HOST }}
+        username: ${{ secrets.USERNAME }}
+        password: ${{ secrets.PASSWORD }}
+        port: ${{ secrets.PORT }}
+        script: whoami
