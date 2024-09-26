@@ -20,7 +20,7 @@ jobs:
         with:
           host: ${{ secrets.REMOTE_HOST }}
           username: ${{ secrets.REMOTE_USER }}
-          key: ${{ secrets.REMOTE_PRIVATE_KEY }
+          key: ${{ secrets.REMOTE_PRIVATE_KEY }}
           script: |
             cd /home/opc/website
             git pull origin main
