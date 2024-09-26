@@ -2,7 +2,7 @@
 title: AI Python for Beginners
 date: 2024-09-26T13:05:00.834Z
 lastmod: 2024-09-26T13:05:00.834Z
-draft: true
+draft: false
 description: AI Python for Beginners
 summary: ""
 tags:
