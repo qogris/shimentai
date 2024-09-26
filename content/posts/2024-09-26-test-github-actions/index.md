@@ -11,8 +11,10 @@ authors: "haifeng"
 isCJKLanguage: false
 slug: test-github-actions
 ---
-test Deploying Hugo remotely with Github Actions.
+update 1: test Deploying Hugo remotely with Github Actions.
 
-udpate: reset Github secret Keys.
+udpate 2: reset Github secret Keys.
 
-udpate 3: typo correction in yml file
+udpate 3: typo correction in yml file.
+
+update 4: correct secrets
