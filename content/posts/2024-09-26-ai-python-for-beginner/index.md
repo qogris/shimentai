@@ -18,6 +18,6 @@ fmContentType: posts
 slug: ai-python-beginners
 ---
 
-{{<bilibili BV1oxpKefEvM>}}
+{{< bilibili BV1oxpKefEvM >}}
 
-{{<youtube Mhux3FqDQBs>}}
+{{< youtube Mhux3FqDQBs>}}
