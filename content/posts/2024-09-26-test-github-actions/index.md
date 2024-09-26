@@ -40,16 +40,14 @@ In summary, GitHub Actions provides a powerful and flexible platform to automate
 
 ## Build a Publish GitHub Workflow
 
-Like some of the other GitHub features, e.g., PR and issue templates, workflows reside in the `.github` of a repository in the subfolder `workflows`. The actual filename doesn’t have much relevance, but let’s call it `publishHugo.yml`.
+Like some of the other GitHub features, e.g., PR and issue templates, workflows reside in the **`.github`** of a repository in the subfolder **`workflows`**. The actual filename doesn’t have much relevance, but let’s call it **`publishHugo.yml`**.
 
 ### The Basic Structure
 
 Here’s the basic structure of GitHub Action workflow file:
 
 ```yaml
-
 name: Publish Hugo
-
 on: push
 
 jobs:
@@ -59,19 +57,13 @@ jobs:
 
     steps:
       - ...
-
 ```
 
 The keys are quite self-explanatory, but let’s go over them:
 
-`name:`
-The name of your workflow
-
-`on:`
-One or more events that trigger your workflow. You’re not limited to Git events, though, as workflows can also run on events like “issue created” and others. For this blog, however, only push is required. You can check out all the possible events in the [documentation](https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows).
-
-`jobs:`
-One or more jobs that will run in Docker containers. In the example. A job has a series of steps that are either a pre-defined action, or you can run commands and shell scripts directly in the container.
+- **`name`**: The name of your workflow
+- **`on`**: One or more events that trigger your workflow. You’re not limited to Git events, though, as workflows can also run on events like “issue created” and others. For this blog, however, only push is required. You can check out all the possible events in the [documentation](https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows).
+- **`jobs`**: One or more jobs that will run in Docker containers. In the example. A job has a series of steps that are either a pre-defined action, or you can run commands and shell scripts directly in the container.
 
 ### Defining Job Steps
 
@@ -89,7 +81,7 @@ In essence, GitHub Actions are tasks written running in Node.js with access to a
 
 #### Check the repository
 
-[`actions/checkout@v4`](https://github.com/actions/checkout)
+The [**`actions/checkout@v4`**](https://github.com/actions/checkout) checks out your repository's code into the GitHub Actions runner. It allows you to access and work with your repository's files during the workflow execution. This is often the first step in many workflows, as it makes the repository code available for building, testing, or deploying.
 
 ```yaml
 - uses: actions/checkout@v4
@@ -99,16 +91,15 @@ In essence, GitHub Actions are tasks written running in Node.js with access to a
 ```
 
 Let’s go over the different keys:
-`uses:`
-Which action the step uses.
-`with:`
-Anything under this key is action-specific configuration. In my case, Congo theme is added with Hugo Module method，so submodules should be fetched as well.
+
+- **`uses`**: Which action the step uses.
+- **`with`**: Anything under this key is action-specific configuration. In my case, Congo theme is added with Hugo Module method，so submodules should be fetched as well.
 
 #### Deploy to Remote Server
 
-Publishing Hugo in a remote server would require GitHub to `SSH` to server firstly and run cmds like `git pull` and `hugo --minify` remotely.
+Publishing Hugo in a remote server would require GitHub to **`SSH`** to server firstly and run cmds like **`git pull`** and **`hugo --minify`** remotely.
 
-The [`appleboy/ssh-action@v1.0.3`](https://github.com/appleboy/ssh-action) action simplifies those into a single step:
+The [**`appleboy/ssh-action@v1.0.3`**](https://github.com/appleboy/ssh-action) action simplifies those into a single step:
 
 ```yaml
 - name: Deploy to Remote Server
@@ -124,7 +115,75 @@ The [`appleboy/ssh-action@v1.0.3`](https://github.com/appleboy/ssh-action) actio
             sudo systemctl restart nginx
 ```
 
-The ssh-action requires `REMOTE_HOST` `REMOTE_USER` and `REMOTE_PRIVATE_KEY` are required for remote server SSH.
+Here’s an overview of the three required parameters:
 
-Looking back at the broadly defined steps from the previous section, these GitHub Actions emerge:
+- **`REMOTE_HOST`**: This is the IP address or domain name of the server you want to connect to. For example, it could be something like `123.456.789.0` or `yourserver.com`.
+- **`REMOTE_USER`**: This is the username on the remote server that you will use for SSH access. This user should have the appropriate permissions to perform actions (e.g., building the Hugo site) on the server.
+- **`REMOTE_PRIVATE_KEY`**: This is the private key used for SSH authentication. It's paired with the public key that is already set up on the remote server (under `~/.ssh/authorized_keys` for the remote user). You will need to add this key as a secret in your GitHub repository to securely handle it in workflows.
 
+## Set GitHub Secrets
+
+1. Generate a private/public key pair (if you don’t already have one)
+
+```bash
+    ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+```
+
+This will generate a private key (`id_rsa`) and a public key (`id_rsa.pub`).
+
+2. Copy the public key to your remote server
+
+```bash
+    ssh-copy-id -i ~/.ssh/id_rsa.pub user@yourserver.com
+```
+
+This ensures the remote server trusts the private key on your machine.
+
+3. Add the private key to GitHub Secrets
+
+- Go to your GitHub repository settings → Secrets.
+- Add a new secret for each of the required variables:
+  - `REMOTE_HOST`
+  - `REMOTE_USER`
+  - `REMOTE_PRIVATE_KEY` (contents of the `id_rsa` private key file).
+
+## Configure workflow
+
+Configure workflow to reference GitHub Secrets, as shown in the complete YAML example below:
+
+```yaml
+name: Deploy Hugo remotely
+on:
+  push:
+    branches:
+      - main  # Set a branch to deploy
+  pull_request:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-22.04
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: true  # Fetch Hugo themes (true OR recursive)
+          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+
+      - name: Deploy to Remote Server
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.REMOTE_HOST }}
+          username: ${{ secrets.REMOTE_USER }}
+          key: ${{ secrets.REMOTE_PRIVATE_KEY }}
+          script: |
+            cd /path/to/your/website
+            git pull origin main
+            hugo --minify
+            sudo systemctl restart nginx
+
+```
+
+## Summary
+
+After pushing changes to GitHub, this workflow will connect to your server via SSH, pull the latest code, and build the Hugo site automatically.
