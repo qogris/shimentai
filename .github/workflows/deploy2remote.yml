@@ -25,5 +25,5 @@ jobs:
           script: |
             cd /home/opc/website
             git pull origin main
-            hugo --minify
+            hugo
             sudo systemctl restart nginx
