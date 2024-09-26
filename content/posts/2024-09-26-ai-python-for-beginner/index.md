@@ -19,3 +19,5 @@ slug: ai-python-beginners
 ---
 
 {{<bilibili BV1oxpKefEvM>}}
+
+{{<youtube Mhux3FqDQBs>}}
