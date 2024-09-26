@@ -40,7 +40,7 @@ In summary, GitHub Actions provides a powerful and flexible platform to automate
 
 ## Build a Publish GitHub Workflow
 
-Like some of the other GitHub features, e.g., PR and issue templates, workflows reside in the **`.github`** of a repository in the subfolder **`workflows`**. The actual filename doesn’t have much relevance, but let’s call it **`publishHugo.yml`**.
+Like some of the other GitHub features, e.g., PR and issue templates, workflows reside in the {{<highlight **`.github`**>}} of a repository in the subfolder **`workflows`**. The actual filename doesn’t have much relevance, but let’s call it **`publishHugo.yml`**.
 
 ### The Basic Structure
 
