@@ -2,7 +2,7 @@
 title: 近期日常
 date: 2024-09-26T08:41:50.784Z
 lastmod: 2024-09-26T08:41:50.784Z
-draft: true
+draft: false
 description: my recent daily life
 summary: 近期居家的高强度码农生活
 tags:
