@@ -6,9 +6,16 @@ draft: false
 description: my recent daily life
 summary: null
 tags:
-    - “photograph”，“keyboard”，“mouse”，“desktop”，“摄影”，“instagram”，“日常生活”
+    - photograph
+    - keyboard
+    - mouse
+    - desktop
+    - 摄影
+    - instagram
+    - 日常生活
 categories:
-    - “Expression”，“Photograph”
+    - Expression
+    - Photograph
 authors: haifeng
 isCJKLanguage: true
 fmContentType: posts
