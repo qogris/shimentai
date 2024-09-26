@@ -20,3 +20,5 @@ udpate 3: typo correction in yml file.
 update 4: correct secrets
 
 update 5: self_host runner
+
+update 6: workflow yml update
