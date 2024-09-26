@@ -17,7 +17,7 @@ jobs:
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
 
       - name: Deploy to Remote Server
-        uses: appleboy/ssh-action@1.0.2
+        uses: appleboy/ssh-action@latest
         with:
           host: ${{ secrets.REMOTE_HOST }}
           username: ${{ secrets.REMOTE_USER }}
