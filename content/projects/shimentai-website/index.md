@@ -29,7 +29,7 @@ slug: shimentai-powered-by-hugo
 
 | Date | Update | Tags | Status |
 |----|----|-----|-----|
-| "{{ now "2006-01-02 15:04:05" }}" | 网站内容结构规划 | 规划 | 进行中 |
+| {{ current-time }} | 网站内容结构规划 | 规划 | 进行中 |
 
 ## 前言
 
