@@ -20,6 +20,7 @@ tags:
 categories:
   - Expression
   - Project
+  - Challenge
 authors:
   - haifeng
   - qogris
