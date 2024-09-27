@@ -28,8 +28,8 @@ slug: shimentai-powered-by-hugo
 ---
 
 | Date | Update | Tags | Status |
-| {{ .Date }} | 章节规划 |  | In Progress |
-| ---- | -------| ---- | Done |
+|----|----|-----|-----|
+| "{{ now "2006-01-02 15:04:05" }}" | 网站内容结构规划 | 规划 | 进行中 |
 
 ## 前言
 
@@ -167,8 +167,6 @@ hugo server
 Congo 提供了高度可定制的布局和样式。你可以通过修改 `themes/congo/layouts` 中的模板文件，或者在 `static/` 目录下添加自定义 CSS 来实现个性化定制。
 
 ## 运维
-
-<!- 今天看了一下午的frontmatter，感觉这里面的门道还是很多的，所以想到还需要有一个运维的一级标题，介绍如何发布管理网站内容->
 
 ### Frontmatter
 
