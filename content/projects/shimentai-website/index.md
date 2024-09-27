@@ -172,4 +172,4 @@ Congo 提供了高度可定制的布局和样式。你可以通过修改 `themes
 ## 资源
 
 - [1] [Illustrations | unDraw](https://undraw.co/illustrations)
-- [2] [SVG Repo - Free SVG Vectors and Icons](https://www.svgrepo.com/)1. <https://undraw.co/illustrations>
+- [2] [SVG Repo - Free SVG Vectors and Icons](https://www.svgrepo.com/)
