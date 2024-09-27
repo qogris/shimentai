@@ -30,7 +30,7 @@ slug: shimentai-powered-hugo
 
 建立网站的初衷在[[我的人生四面体]](/content/posts/about-shimentai)中有过介绍，这里就不再赘述。一时兴起立了flag，就不能再沉浸于漫无边际的思想游戏，而是要真的去学习实践，变身工程师来把它具体落地。从网站框架及开发语言的选取，到控制外观布局及响应方式的样式设置，甚至到一个很小的Icon图标的视觉美化，这里面所涉及的内容之多可想而知，对一个有点追求完美主义的INFP来说，需要投入的精力之大也不难想象:sweat_smile:。不过就像在另一篇[[近期日常]](/content/posts/2024-09-26-近期日常/)文章中提到的，这个过程我本人还是非常乐在其中的。所以在走完这一整套工程实践，基本实现的当初目标之后，我也很愿意将之详细记录下来，因为，输出分享（Outputs）也即是我建立Shimetai这个网站的主要目的:medal_military:
 
-## 前期准备（可选）
+## 准备（可选）
 
 在开始建立网站之前可能会有几项前期工作要首先完成（如选择托管平台，该步骤可能不完全需要），例如网站服务器、网站平台、域名申请等。
 
@@ -54,7 +54,7 @@ slug: shimentai-powered-hugo
 
 {{< icon "coffee">}}（待补充）...
 
-## 建站过程
+## 建站
 
 ### 1.Nginx搭建与配置
 
@@ -160,3 +160,16 @@ hugo server
 #### （8）定制 Congo 主题
 
 Congo 提供了高度可定制的布局和样式。你可以通过修改 `themes/congo/layouts` 中的模板文件，或者在 `static/` 目录下添加自定义 CSS 来实现个性化定制。
+
+## 工具
+
+在整个网站开发建设过程中，我也学习掌握了很多的建站工具，这里推荐几个我个人非常喜欢的
+
+1. 大名鼎鼎的Visual Studio Code
+
+2. Online SVG Editor: [Boxy SVG Editor (boxy-svg.com)](https://boxy-svg.com/)
+
+## 资源
+
+[Illustrations | unDraw](https://undraw.co/illustrations)
+[SVG Repo - Free SVG Vectors and Icons](https://www.svgrepo.com/)1. <https://undraw.co/illustrations>
