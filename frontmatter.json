@@ -47,18 +47,15 @@
           "type": "categories"
         },
         {
-          "title": "authors",
-          "name": "authors",
-          "type": "choice",
-          "choices": [
-            "haifeng",
-            "qogris"
-          ]
-        },
-        {
           "title": "isCJKLanguage",
           "name": "isCJKLanguage",
-          "type": "string"
+          "type": "boolean"
+        },
+        {
+          "title": "template",
+          "name": "template",
+          "type": "string",
+          "description": "archetypes/posts.md"
         }
       ]
     },
@@ -103,18 +100,15 @@
           "type": "categories"
         },
         {
-          "title": "authors",
-          "name": "authors",
-          "type": "choice",
-          "choices": [
-            "haifeng",
-            "qogris"
-          ]
-        },
-        {
           "title": "isCJKLanguage",
           "name": "isCJKLanguage",
-          "type": "string"
+          "type": "boolean"
+        },
+        {
+          "title": "template",
+          "name": "template",
+          "type": "string",
+          "description": "archetypes/projects.md"
         }
       ]
     }
