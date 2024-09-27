@@ -16,7 +16,3 @@ slug: markdown
 _build:
   render: true
 ---
-
-Markdown is an essential tool for formatting content in Hugo, allowing for a simple yet powerful way to structure text. Within the Congo theme, Markdown plays a vital role in creating clean, readable articles. This page provides examples of basic Markdown formatting, along with demonstrations of how standard HTML elements are styled within the theme.
-
-Whether you're building headings, lists, or embedding code blocks, Markdown offers an intuitive way to compose and organize your content. This reference page serves as a quick guide to the Markdown syntax supported by the Congo theme, ensuring you can efficiently format and enhance your pages.
