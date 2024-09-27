@@ -4,6 +4,7 @@
     {
       "name": "posts",
       "pageBundle": true,
+      "allowAsSubContent": true,
       "previewPath": "/posts",
       "fields": [
         {
@@ -55,13 +56,14 @@
           "title": "template",
           "name": "template",
           "type": "string",
-          "description": "archetypes/posts.md"
+          "description": "[[workspace]]/archetypes/posts.md"
         }
       ]
     },
     {
       "name": "projects",
       "pageBundle": true,
+      "allowAsSubContent": true,
       "previewPath": "/projects",
       "fields": [
         {
@@ -108,7 +110,7 @@
           "title": "template",
           "name": "template",
           "type": "string",
-          "description": "archetypes/projects.md"
+          "description": "[[workspace]]/archetypes/projects.md"
         }
       ]
     }
