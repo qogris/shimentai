@@ -35,7 +35,7 @@ slug: shimentai-powered-by-hugo
 
 在开始建立网站之前可能会有几项前期工作要首先完成（如选择托管平台，该步骤可能不完全需要），例如网站服务器、网站平台、域名申请等。
 
-{{< icon "coffee">}}{{badge}}（待补充）...{{/badge}}
+{{< icon "coffee">}}<a class="text-sm">待補充...</a>
 
 ### 1.网站服务器
 
@@ -45,27 +45,27 @@ slug: shimentai-powered-by-hugo
 
 ### 2.域名购买
 
-{{< icon "coffee">}}{{badge}}（待补充）...{{/badge}}
+{{< icon "coffee">}}<a class="text-sm">待補充...</a>
 
 ### 3.域名解析
 
-{{< icon "coffee">}}{{badge}}（待补充）...{{/badge}}
+{{< icon "coffee">}}<a class="text-sm">待補充...</a>
 
 ### 4.证书申请
 
-{{< icon "coffee">}}{{badge}}（待补充）...{{/badge}}
+{{< icon "coffee">}}<a class="text-sm">待補充...</a>
 
 ## 建站
 
 ### 1.Nginx搭建与配置
 
-{{< icon "coffee">}}{{badge}}（待补充）...{{/badge}}
+{{< icon "coffee">}}<a class="text-sm">待補充...</a>
 
 ### 2.Hugo安装与建站
 
 经过调研后，我发现静态网站（static-site）近年来越来越流行，其在性能、安全性、扩展性、维护成本以及开发者体验上有着自身的优势。另外，随着像 Hugo、Jekyll、Gatsby 等静态网站生成器的出现，使得构建静态网站也变得非常方便。静态网站适用于多种应用场景，尤其非常适合**个人博客**、**个人简介**和**作品集**网站等。用户可以通过静态网站生成器快速发布和更新内容，而不需要担心服务器的复杂性。由于博客内容多是固定的，静态网站能提供极快的加载速度，并且易于管理和扩展。
 
-{{< icon "coffee">}}{{badge}}（待补充）...{{/badge}}
+{{< icon "coffee">}}<a class="text-sm">待補充...</a>
 
 使用 **Hugo** 和 **Congo Theme** 来建立个人网站，以下是详细的步骤：
 
