@@ -8,6 +8,7 @@ categories: ["Reference"]
 tags: ["emojis","shortcodes","html","css","theme"]
 slug: emoji-shortcodes
 _build:
-  render: "never"
+  render: "true"
 
 ---
+
