@@ -29,7 +29,7 @@ slug: shimentai-powered-by-hugo
 
 | Date | Update | Tags | Status |
 |----|----|-----|-----|
-| {{ current-time }} | 网站内容结构规划 | 规划 | 进行中 |
+| {{ < current-time > }} | 网站内容结构规划 | 规划 | 进行中 |
 
 ## 前言
 
@@ -168,7 +168,11 @@ Congo 提供了高度可定制的布局和样式。你可以通过修改 `themes
 
 ## 运维
 
-### Frontmatter
+### 1.Git
+
+### 2.Visual Studio Code
+
+### 3.Frontmatter
 
 ## 工具
 
