@@ -165,11 +165,13 @@ Congo 提供了高度可定制的布局和样式。你可以通过修改 `themes
 
 在整个网站开发建设过程中，我也学习掌握了很多的建站工具，这里推荐几个我个人非常喜欢的
 
-1. 大名鼎鼎的Visual Studio Code
+[1] Visual Studio Code
 
-2. Online SVG Editor: [Boxy SVG Editor (boxy-svg.com)](https://boxy-svg.com/)
+[2] [Canva](https://www.canva.com/)
+
+[3] Online SVG Editor: [Boxy SVG Editor (boxy-svg.com)](https://boxy-svg.com/)
 
 ## 资源
 
-[Illustrations | unDraw](https://undraw.co/illustrations)
-[SVG Repo - Free SVG Vectors and Icons](https://www.svgrepo.com/)1. <https://undraw.co/illustrations>
+[1] [Illustrations | unDraw](https://undraw.co/illustrations)
+[2] [SVG Repo - Free SVG Vectors and Icons](https://www.svgrepo.com/)1. <https://undraw.co/illustrations>
