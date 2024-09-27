@@ -23,7 +23,7 @@ categories:
 authors:
   - haifeng
   - qogris
-slug: shimentai-powered-hugo
+slug: shimentai-powered-by-hugo
 ---
 
 ## 前言
@@ -34,37 +34,37 @@ slug: shimentai-powered-hugo
 
 在开始建立网站之前可能会有几项前期工作要首先完成（如选择托管平台，该步骤可能不完全需要），例如网站服务器、网站平台、域名申请等。
 
-{{< icon "coffee">}}（待补充）...
+{{< icon "coffee">}}{{badge}}（待补充）...{{/badge}}
 
 ### 1.网站服务器
 
-考虑是否要托管到自己的VPS还是选择比如WordPress，Github Pages，Cloudflare等这些个人网站托管平台
+考虑是否要托管到自己的VPS还是选择比如WordPress，Github Pages，Cloudflare等这些个人网站托管平台 ...
 
-{{< icon "coffee">}}（待补充）...
+{{/badge}}{{< icon "coffee">}}（待补充）...
 
 ### 2.域名购买
 
-{{< icon "coffee">}}（待补充）...
+{{< icon "coffee">}}{{badge}}（待补充）...{{/badge}}
 
 ### 3.域名解析
 
-{{< icon "coffee">}}（待补充）...
+{{< icon "coffee">}}{{badge}}（待补充）...{{/badge}}
 
 ### 4.证书申请
 
-{{< icon "coffee">}}（待补充）...
+{{< icon "coffee">}}{{badge}}（待补充）...{{/badge}}
 
 ## 建站
 
 ### 1.Nginx搭建与配置
 
-{{< icon "coffee">}}（待补充）...
+{{< icon "coffee">}}{{badge}}（待补充）...{{/badge}}
 
 ### 2.Hugo安装与建站
 
 经过调研后，我发现静态网站（static-site）近年来越来越流行，其在性能、安全性、扩展性、维护成本以及开发者体验上有着自身的优势。另外，随着像 Hugo、Jekyll、Gatsby 等静态网站生成器的出现，使得构建静态网站也变得非常方便。静态网站适用于多种应用场景，尤其非常适合**个人博客**、**个人简介**和**作品集**网站等。用户可以通过静态网站生成器快速发布和更新内容，而不需要担心服务器的复杂性。由于博客内容多是固定的，静态网站能提供极快的加载速度，并且易于管理和扩展。
 
-{{< icon "coffee">}}（待补充）...
+{{< icon "coffee">}}{{badge}}（待补充）...{{/badge}}
 
 使用 **Hugo** 和 **Congo Theme** 来建立个人网站，以下是详细的步骤：
 
@@ -165,13 +165,11 @@ Congo 提供了高度可定制的布局和样式。你可以通过修改 `themes
 
 在整个网站开发建设过程中，我也学习掌握了很多的建站工具，这里推荐几个我个人非常喜欢的
 
-[1] Visual Studio Code
-
-[2] [Canva](https://www.canva.com/)
-
-[3] Online SVG Editor: [Boxy SVG Editor (boxy-svg.com)](https://boxy-svg.com/)
+- [1] Visual Studio Code
+- [2] [Canva](https://www.canva.com/)
+- [3] Online SVG Editor: [Boxy SVG Editor (boxy-svg.com)](https://boxy-svg.com/)
 
 ## 资源
 
-[1] [Illustrations | unDraw](https://undraw.co/illustrations)
-[2] [SVG Repo - Free SVG Vectors and Icons](https://www.svgrepo.com/)1. <https://undraw.co/illustrations>
+- [1] [Illustrations | unDraw](https://undraw.co/illustrations)
+- [2] [SVG Repo - Free SVG Vectors and Icons](https://www.svgrepo.com/)1. <https://undraw.co/illustrations>
