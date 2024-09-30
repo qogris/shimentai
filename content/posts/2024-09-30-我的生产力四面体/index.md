@@ -2,7 +2,7 @@
 title: 我的生产力四面体
 date: 2024-09-30T03:25:41.143Z
 lastmod: 2024-09-30T03:25:41.144Z
-draft: true
+draft: false
 description: ""
 summary: ""
 tags: [“tools”, "obsidian", "vscode", "cursor", "productivity"]
