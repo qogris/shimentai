@@ -4,7 +4,7 @@ date: 2024-09-30T03:25:41.143Z
 lastmod: 2024-09-30T03:25:41.144Z
 draft: false
 description: ""
-summary: "目前常用的生产力工具四件套 - Obsidian/VS Code/Hugo/Cursor"
+summary: "Obsidian - VS Code - Hugo - Cursor"
 tags: [“tools”, "obsidian", "vscode", "cursor", "productivity"]
 categories: [“Growth”]
 isCJKLanguage: true
