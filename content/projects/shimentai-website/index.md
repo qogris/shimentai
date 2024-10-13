@@ -1,7 +1,7 @@
 ---
 title: Shimentai - Powered by Hugo
 date: 2024-09-20T09:42:44Z
-lastmod: 2024-09-27T09:42:44Z
+lastmod: 2024-10-12T09:42:44Z
 draft: false
 description: learn to use static website generator and themes configration
 summary: Building a simple and elegant personal website with Hugo and Congo.
@@ -180,7 +180,7 @@ Congo 提供了高度可定制的布局和样式。你可以通过修改 `themes
 
 在整个网站开发建设过程中，我也学习掌握了很多的建站工具，这里推荐几个我个人非常喜欢的
 
-- [1] Visual Studio Code
+- [1] [Visual Studio Code](https://code.visualstudio.com)
 - [2] [Canva](https://www.canva.com/)
 - [3] Online SVG Editor: [Boxy SVG Editor (boxy-svg.com)](https://boxy-svg.com/)
 
