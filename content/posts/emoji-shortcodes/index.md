@@ -8,7 +8,7 @@ categories:
   - Reference
 tags:
   - emojis
-  - shortcodes
+  - shortcode
   - html
   - css
   - theme
