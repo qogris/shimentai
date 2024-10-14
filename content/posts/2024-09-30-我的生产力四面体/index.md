@@ -4,12 +4,21 @@ date: 2024-09-30T03:25:41.143Z
 lastmod: 2024-09-30T03:25:41.144Z
 draft: false
 description: ""
-summary: "Obsidian - VS Code - Hugo - Cursor"
-tags: [“tools”, "obsidian", "vscode", "cursor", "productivity"]
-categories: [“Growth”]
+summary: Obsidian - VS Code - Hugo - Cursor
+tags:
+    - tools
+    - obsidian
+    - vscode
+    - cursor
+    - productivity
+categories:
+    - Growth
+    - Expression
+    - Reflection
 isCJKLanguage: true
 template: ""
 fmContentType: posts
+slug: 我的生产力四面体
 ---
 
 🛠️ 近期日常的生产力工具四件套，值得记录分享一下！
