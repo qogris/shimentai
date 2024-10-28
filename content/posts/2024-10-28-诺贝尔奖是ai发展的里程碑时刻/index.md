@@ -15,7 +15,7 @@ tags:
 categories:
     - Digest
     - Reference
-isCJKLanguage: false
+isCJKLanguage: true
 template: ""
 fmContentType: posts
 slug: 诺贝尔奖是ai发展的里程碑时刻
