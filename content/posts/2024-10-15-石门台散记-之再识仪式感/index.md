@@ -1,19 +1,17 @@
 ---
 title: 石门台散记 之再识仪式感
 date: 2024-10-15T15:24:49.634Z
-lastmod: 2024-11-4T03:24:49.634Z
+lastmod: 2024-11-04T03:24:49.634Z
 draft: false
 description: ""
 summary: 仪式感就像一把雕刻刀，雕琢着生活中的一些细节和瞬间，让生活从单调走向多彩。仪式感还是一条情感的纽带，拉近心与心之间的距离。 仪式感帮助我们在繁忙的生活中找到快乐和满足，在面向未知的明天时，也能彼此温暖共同前行。
 tags:
-    - Thinking
-    - Writting
+    - thinking
+    - writting
 categories:
     - Expression
     - Reflection
 isCJKLanguage: true
-template: ""
-fmContentType: posts
 slug: 石门台散记-之再识仪式感
 ---
 
