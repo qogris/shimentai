@@ -13,7 +13,7 @@ tags:
 categories:
     - Digest
     - Reference”
-isCJKLanguage: false
+isCJKLanguage: true
 template: ""
 fmContentType: posts
 slug: 通用人工智能发展的四个阶段
