@@ -32,6 +32,4 @@ AGI（通用人工智能）这个本年度最热最硬科技词汇的标准定�
 
 如何找到那个可以scaling的好东西，并聚集一些聪明人一起聚焦推动它进一步扩展，是每一个科技创业公司都应该仔细思考的问题。
 
-采访实录原文参见微信公众号 “复旦商业知识”（ID：BKfudan）文章链接：
-
-[OpenAI山姆·奥尔特曼最新专访：大公司对AI的无知与科创公司的巨大机遇丨AI最前沿](https://mp.weixin.qq.com/s?__biz=MjM5NzA0MTA4MA==&mid=2650338778&idx=1&sn=647643015d904fadee98e1f66f02f3b9&chksm=bf6fee5386a4727cc566da0ffd8c76f41420dda57f7604b789e4799bccc3ffb6bd690d5d5939&scene=0&xtrack=1#rd)
+采访实录原文参见微信公众号 “复旦商业知识”（ID：BKfudan）文章链接：[OpenAI山姆·奥尔特曼最新专访：大公司对AI的无知与科创公司的巨大机遇丨AI最前沿](https://mp.weixin.qq.com/s?__biz=MjM5NzA0MTA4MA==&mid=2650338778&idx=1&sn=647643015d904fadee98e1f66f02f3b9&chksm=bf6fee5386a4727cc566da0ffd8c76f41420dda57f7604b789e4799bccc3ffb6bd690d5d5939&scene=0&xtrack=1#rd)
