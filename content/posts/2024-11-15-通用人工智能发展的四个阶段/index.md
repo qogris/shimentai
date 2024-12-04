@@ -12,7 +12,7 @@ tags:
     - Thinking
 categories:
     - Digest
-    - Reference”
+    - Reference
 isCJKLanguage: true
 template: ""
 fmContentType: posts
