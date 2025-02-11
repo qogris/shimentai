@@ -51,22 +51,20 @@ Ollama is a lightweight, extensible framework for running open-source LLMs such 
 
 1. Download the Ollama installation script.
 
-    CONSOLECopy
-
+    ```console
     $ wget <https://ollama.ai/install.sh>
+    ```
 
 2. Grant execute permissions to the script.
 
-    CONSOLECopy
-
+    ```console
     $ sudo chmod +x install.sh
-
+    ```
 3. Run the script to install Ollama.
 
-    CONSOLECopy
-
+    ```console
     $ sudo ./install.sh
-
+    ```
     Output:
 
     ```bash
@@ -84,22 +82,20 @@ Ollama is a lightweight, extensible framework for running open-source LLMs such 
 
 4. Enable the Ollama system service to start at boot.
 
-    CONSOLECopy
-
+    ```console
     $ sudo systemctl enable ollama
-
+    ```
 5. Start the Ollama service.
 
-    CONSOLECopy
-
+    ```console
     $ sudo systemctl start ollama
+    ```
 
 6. View the Ollama service status and verify it's running.
 
-    CONSOLECopy
-
+    ```console
     $ sudo systemctl status ollama
-
+    ```
     Output:
 
     ```bash
@@ -116,10 +112,9 @@ Ollama is a lightweight, extensible framework for running open-source LLMs such 
 
 7. Use Ollama to download a sample model such as `llama3:8b`.
 
-    CONSOLECopy
-
+    ```console
     $ sudo ollama pull llama3:8b
-
+    ```
     Output:
 
     ```bash
@@ -142,28 +137,24 @@ You can install Open WebUI using Python Pip or Docker. The Pip method requires t
 
 8. Install Python 3.11 version.
 
-    CONSOLECopy
-
+    ```console
     $ sudo apt install python3.11
-
+    ```
 9. Install Open WebUI.
 
-    CONSOLECopy
-
+    ```console
     $ sudo python3.11 -m pip install open-webui
-
+    ```
 10. Upgrade `pillow` and `pyopenssl` modules.
 
-    CONSOLECopy
-
+    ```console
     $ sudo python3.11 -m pip install -U Pillow pyopenssl
-
+    ```
 11. Run Open WebUI and verify it does not return errors.
 
-    CONSOLECopy
-
+    ```console
     $ sudo open-webui serve
-
+    ```
     Output:
 
     ```bash
@@ -192,10 +183,10 @@ If you install Open WebUI using Pip, the application runs using the `open-webui
 
 12. Create a new `/usr/lib/systemd/system/openwebui.service` system service file using a text editor like `vim`.
 
-    CONSOLECopy
-
+    ```console
     $ sudo vim /usr/lib/systemd/system/openwebui.service
-
+    ```
+    
 13. Add the following service configurations to the `/usr/lib/systemd/system/openwebui.service` file.
 
     INICopy
