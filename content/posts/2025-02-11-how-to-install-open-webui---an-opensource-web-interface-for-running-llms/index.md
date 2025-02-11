@@ -52,19 +52,21 @@ Ollama is a lightweight, extensible framework for running open-source LLMs such 
 1. Download the Ollama installation script.
 
     ```console
-    $ wget <https://ollama.ai/install.sh>
+    wget <https://ollama.ai/install.sh>
     ```
 
 2. Grant execute permissions to the script.
 
     ```console
-    $ sudo chmod +x install.sh
+    sudo chmod +x install.sh
     ```
+
 3. Run the script to install Ollama.
 
     ```console
-    $ sudo ./install.sh
+    sudo ./install.sh
     ```
+
     Output:
 
     ```bash
@@ -83,19 +85,21 @@ Ollama is a lightweight, extensible framework for running open-source LLMs such 
 4. Enable the Ollama system service to start at boot.
 
     ```console
-    $ sudo systemctl enable ollama
+    sudo systemctl enable ollama
     ```
+
 5. Start the Ollama service.
 
     ```console
-    $ sudo systemctl start ollama
+    sudo systemctl start ollama
     ```
 
 6. View the Ollama service status and verify it's running.
 
     ```console
-    $ sudo systemctl status ollama
+    sudo systemctl status ollama
     ```
+
     Output:
 
     ```bash
@@ -113,8 +117,9 @@ Ollama is a lightweight, extensible framework for running open-source LLMs such 
 7. Use Ollama to download a sample model such as `llama3:8b`.
 
     ```console
-    $ sudo ollama pull llama3:8b
+    sudo ollama pull llama3:8b
     ```
+
     Output:
 
     ```bash
@@ -135,26 +140,30 @@ You can install Open WebUI using Python Pip or Docker. The Pip method requires t
 
 ## Option 1: Install Open WebUI Using Pip
 
-8. Install Python 3.11 version.
+1. Install Python 3.11 version.
 
     ```console
-    $ sudo apt install python3.11
+    sudo apt install python3.11
     ```
-9. Install Open WebUI.
+
+2. Install Open WebUI.
 
     ```console
-    $ sudo python3.11 -m pip install open-webui
+    sudo python3.11 -m pip install open-webui
     ```
-10. Upgrade `pillow` and `pyopenssl` modules.
+
+3. Upgrade `pillow` and `pyopenssl` modules.
 
     ```console
-    $ sudo python3.11 -m pip install -U Pillow pyopenssl
+    sudo python3.11 -m pip install -U Pillow pyopenssl
     ```
-11. Run Open WebUI and verify it does not return errors.
+
+4. Run Open WebUI and verify it does not return errors.
 
     ```console
-    $ sudo open-webui serve
+    sudo open-webui serve
     ```
+
     Output:
 
     ```bash
@@ -181,15 +190,15 @@ You can install Open WebUI using Python Pip or Docker. The Pip method requires t
 
 If you install Open WebUI using Pip, the application runs using the `open-webui serve` command. You should create a system service to manage the Open WebUI processes without running the `open-webui serve` command directly. Follow the steps below.
 
-12. Create a new `/usr/lib/systemd/system/openwebui.service` system service file using a text editor like `vim`.
+1. Create a new `/usr/lib/systemd/system/openwebui.service` system service file using a text editor like `vim`.
 
     ```console
-    $ sudo vim /usr/lib/systemd/system/openwebui.service
+    sudo vim /usr/lib/systemd/system/openwebui.service
     ```
-    
-13. Add the following service configurations to the `/usr/lib/systemd/system/openwebui.service` file.
 
-    INICopy
+2. Add the following service configurations to the `/usr/lib/systemd/system/openwebui.service` file.
+
+    ```INI
 
     [Unit]
     Description=Open WebUI Service
@@ -202,34 +211,35 @@ If you install Open WebUI using Pip, the application runs using the `open-webui
 
     [Install]
     WantedBy=multi-user.target
+    ```
 
     Save and close the file.
 
     In the above system service configuration, starting the Open WebUI service automatically runs the `open-webui serve` command on your server.
 
-14. Reload systemd to apply the new service configuration.
+3. Reload systemd to apply the new service configuration.
 
-    CONSOLECopy
+    ```console
+    sudo systemctl daemon-reload
+    ```
 
-    $ sudo systemctl daemon-reload
+4. Enable the Open WebUI system service to start at boot.
 
-15. Enable the Open WebUI system service to start at boot.
+    ```console
+    sudo systemctl enable openwebui.service
+    ```
 
-    CONSOLECopy
+5. Start the Open WebUI service.
 
-    $ sudo systemctl enable openwebui.service
+    ```console
+    sudo systemctl start openwebui
+    ```
 
-16. Start the Open WebUI service.
+6. Test the Open WebUI service status and confirm it's running.
 
-    CONSOLECopy
-
-    $ sudo systemctl start openwebui
-
-17. Test the Open WebUI service status and confirm it's running.
-
-    CONSOLECopy
-
-    $ sudo systemctl status openwebui
+    ```console
+    sudo systemctl status openwebui
+    ```
 
     Output:
 
@@ -247,11 +257,11 @@ If you install Open WebUI using Pip, the application runs using the `open-webui
 
 ## Option 2: Install Open WebUI Using Docker
 
-18. Verify that Docker is running on your server.
+1. Verify that Docker is running on your server.
 
-    CONSOLECopy
-
-    $ sudo docker ps
+    ```console
+    sudo docker ps
+    ```
 
     Output:
 
@@ -265,29 +275,29 @@ If you install Open WebUI using Pip, the application runs using the `open-webui
     Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?
     ```
 
-19. Verify that a GPU device is available on your server.
+2. Verify that a GPU device is available on your server.
 
-    CONSOLECopy
+    ```console
+    nvidia-smi
+    ```
 
-    $ nvidia-smi
+3. Pull the Open WebUI Docker image for Nvidia GPUs to your server.
 
-20. Pull the Open WebUI Docker image for Nvidia GPUs to your server.
-
-    CONSOLECopy
-
-    $ sudo docker pull ghcr.io/open-webui/open-webui:cuda
+    ```console
+    sudo docker pull ghcr.io/open-webui/open-webui:cuda
+    ```
 
     To use Open WebUI on a non-GPU server, download the main Docker image instead.
 
-    CONSOLECopy
+    ```console
+    sudo docker pull ghcr.io/open-webui/open-webui:main
+    ```
 
-    $ sudo docker pull ghcr.io/open-webui/open-webui:main
+4. Run Open WebUI and use all Nvidia GPU devices on the host server.
 
-21. Run Open WebUI and use all Nvidia GPU devices on the host server.
-
-    CONSOLECopy
-
-    $ sudo docker run -d -p 8080:8080 --gpus all --add-host=host.docker.internal:host-gateway -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:cuda
+    ```console
+    sudo docker run -d -p 8080:8080 --gpus all --add-host=host.docker.internal:host-gateway -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:cuda
+    ```
 
     In the above command, Docker runs Open WebUI using the `open-webui:cuda` container image you downloaded earlier with the following options:
 
@@ -298,11 +308,11 @@ If you install Open WebUI using Pip, the application runs using the `open-webui
     - `--name open-webui-new`: Sets the Open WebUI container name for visibility and management.
     - `--restart always`: Enables the Open WebUI container to automatically restart in case the container stops unexpectedly.
     - `ghcr.io/open-webui/open-webui:cuda`: Specifies the Open WebUI docker image to run.
-22. Ensure that the Open WebUI Docker container is running.
+5. Ensure that the Open WebUI Docker container is running.
 
-    CONSOLECopy
-
-    $ sudo docker ps
+    ```console
+    sudo docker ps
+    ```
 
     Output:
 
@@ -315,29 +325,29 @@ If you install Open WebUI using Pip, the application runs using the `open-webui
 
 You can access the Open WebUI on the default port `8080` using your server's IP address or linked domain. Exposing the Open WebUI port in a production environment is insecure. You can use Nginx as a reverse proxy to handle secure connections to the Open WebUI's backend port using HTTP or HTTPS. In the following steps, install Nginx and create a new virtual host configuration to access Open WebUI on your server.
 
-23. Install Nginx.
+1. Install Nginx.
 
-    CONSOLECopy
+    ```console
+    sudo apt install nginx -y
+    ```
 
-    $ sudo apt install nginx -y
+2. Start the Nginx system service.
 
-24. Start the Nginx system service.
-
-    CONSOLECopy
-
-    $ sudo systemctl start nginx
+    ```console
+    sudo systemctl start nginx
+    ```
 
     If you receive an error, stop Apache or any other application using the HTTP port `80` on your server to enable Nginx to run.
 
-25. Create a new `/etc/nginx/sites-available/openwebui.conf` virtual host for Open WebUI.
+3. Create a new `/etc/nginx/sites-available/openwebui.conf` virtual host for Open WebUI.
 
-    CONSOLECopy
+    ```console
+    sudo vim /etc/nginx/sites-available/openwebui.conf
+    ```
 
-    $ sudo vim /etc/nginx/sites-available/openwebui.conf
+4. Add the following Nginx configurations to the `/etc/nginx/sites-available/openwebui.conf` file.
 
-26. Add the following Nginx configurations to the `/etc/nginx/sites-available/openwebui.conf` file.
-
-    NGINXCopy
+    ```NGINX
 
     server {
         listen 80;
@@ -354,20 +364,21 @@ You can access the Open WebUI on the default port `8080` using your server's I
             proxy_set_header X-Forwarded-Proto $scheme;
         }
     }
+    ```
 
     Save the file.
 
-27. Link the `openwebui.conf` configuration to the `sites-enabled` directory to enable it.
+5. Link the `openwebui.conf` configuration to the `sites-enabled` directory to enable it.
 
-    CONSOLECopy
+    ```console
+    sudo ln -s /etc/nginx/sites-available/openwebui.conf /etc/nginx/sites-enabled/openwebui.conf
+    ```
 
-    $ sudo ln -s /etc/nginx/sites-available/openwebui.conf /etc/nginx/sites-enabled/openwebui.conf
+6. Test Nginx for configuration errors.
 
-28. Test Nginx for configuration errors.
-
-    CONSOLECopy
-
-    $ sudo nginx -t
+    ```console
+    sudo nginx -t
+    ```
 
     Output:
 
@@ -376,33 +387,33 @@ You can access the Open WebUI on the default port `8080` using your server's I
     nginx: configuration file /etc/nginx/nginx.conf test is successful
     ```
 
-29. Restart Nginx to apply the Open WebUI virtual host configuration changes.
+7. Restart Nginx to apply the Open WebUI virtual host configuration changes.
 
-    CONSOLECopy
+    ```console
+    sudo systemctl restart nginx
+    ```
 
-    $ sudo systemctl restart nginx
+8. Allow HTTP connections through the firewall.
 
-30. Allow HTTP connections through the firewall.
-
-    CONSOLECopy
-
-    $ sudo ufw allow http
+    ```console
+    sudo ufw allow http
+    ```
 
 ### Generate SSL Certificates to Secure Open WebUI
 
 SSL certificates encrypt the connection between a client's web browser and your server. Use a trusted certificate authority (CA) like Let's Encrypt to generate SSL certificates and secure connections to the Open WebUI using your Nginx configuration. In the following steps, install the Certbot Let's Encrypt client and generate SSL certificates to access Open WebUI using your domain.
 
-31. Install Certbot for Nginx.
+1. Install Certbot for Nginx.
 
-    CONSOLECopy
+    ```console
+    sudo apt install python3-certbot-nginx -y
+    ```
 
-    $ sudo apt install python3-certbot-nginx -y
+2. Generate a new SSL certificate for your domain. Replace `openwebui.example.com` with your domain and  `admin@example.com` with an active email address.
 
-32. Generate a new SSL certificate for your domain. Replace `openwebui.example.com` with your domain and  `admin@example.com` with an active email address.
-
-    CONSOLECopy
-
-    $ sudo certbot --nginx -d openwebui.example.com -m <admin@example.com> --agree-tos
+    ```console
+    sudo certbot --nginx -d openwebui.example.com -m <admin@example.com> --agree-tos
+    ```
 
     Output:
 
@@ -419,43 +430,43 @@ SSL certificates encrypt the connection between a client's web browser and your 
     Congratulations! You have successfully enabled HTTPS on https://openwebui.example.com
     ```
 
-33. Restart Nginx to apply the SSL configuration changes.
+3. Restart Nginx to apply the SSL configuration changes.
 
-    CONSOLECopy
+    ```console
+    sudo systemctl restart nginx
+    ```
 
-    $ sudo systemctl restart nginx
+4. Allow HTTPS connections through the firewall.
 
-34. Allow HTTPS connections through the firewall.
-
-    CONSOLECopy
-
-    $ sudo ufw allow https
+    ```console
+    sudo ufw allow https
+    ```
 
 ## Access Open WebUI
 
 You can access Open WebUI using your domain based on the configuration steps you performed earlier. In the following steps, access Open WebUI and create a new administrator account to run LLMs on the server.
 
-35. Access your Open WebUI's domain to access the web interface.
+1. Access your Open WebUI's domain to access the web interface.
 
     ```bash
     https://openwebui.example.com
     ```
 
-36. Click **Get started** to access Open WebUI.
+2. Click **Get started** to access Open WebUI.
 
     ![Access the Open WebUI Chat Interface](https://sjc1.vultrobjects.com/docs-main-doc-assets-1/2019/28ab7d5e-9928-43f3-b5f8-ed579b1b75b7.png)
 
-37. Enter a new administrator username, email address, and password in the Open WebUI fields.
+3. Enter a new administrator username, email address, and password in the Open WebUI fields.
 
     ![Login to Open WebUI](https://sjc1.vultrobjects.com/docs-main-doc-assets-1/2019/f9a62c27-65be-48a5-aa91-6d953414fccc.png)
 
-38. Click **Create Admin Account** to create the first Open WebUI administrator account.
+4. Click **Create Admin Account** to create the first Open WebUI administrator account.
 
-39. Confirm that the Open WebUI page displays in your browser, click the **Arena Model** drop-down in the top menu, and select the `Llama 8b` model you installed earlier.
+5. Confirm that the Open WebUI page displays in your browser, click the **Arena Model** drop-down in the top menu, and select the `Llama 8b` model you installed earlier.
 
     ![Select the Llama3 model](https://sjc1.vultrobjects.com/docs-main-doc-assets-1/2019/8e9261c3-1d55-413f-9030-9f11d1b59940.png)
 
-40. Enter a new prompt like `Hello today! Write me a simple poem` to generate a result using the default `Llama 8b` model you installed earlier.
+6. Enter a new prompt like `Hello today! Write me a simple poem` to generate a result using the default `Llama 8b` model you installed earlier.
 
     ![Enter a prompt in Open WebUI](https://sjc1.vultrobjects.com/docs-main-doc-assets-1/2019/84259a08-88b7-495f-b869-0853ac005a4c.png)
 
@@ -463,47 +474,47 @@ You can access Open WebUI using your domain based on the configuration steps you
 
 Open WebUI ships with some default AI models. You can also install new models directly using Ollama on the server or by uploading the model files through the Open WebUI interface. In the following steps, install new models using Ollama and run them using Open WebUI.
 
-41. [Visit the Ollama library](https://ollama.com/library) and find new models.
+1. [Visit the Ollama library](https://ollama.com/library) and find new models.
 
-42. Download a new model. For example, the `mistral 7B` model.
+2. Download a new model. For example, the `mistral 7B` model.
 
-    CONSOLECopy
+    ```console
+    sudo ollama pull mistral
+    ```
 
-    $ sudo ollama pull mistral
+3. Download another model, such as `llama3:70b`.
 
-43. Download another model, such as `llama3:70b`.
-
-    CONSOLECopy
-
-    $ sudo ollama pull llama3:70b
+    ```console
+    sudo ollama pull llama3:70b
+    ```
 
     The `llama3:70b` model is `40GB` and requires more RAM to run on the server.
 
-44. Restart Open WebUI to synchronize the new model changes.
+4. Restart Open WebUI to synchronize the new model changes.
 
-    CONSOLECopy
-
-    $ sudo docker restart open-webui
+    ```console
+    sudo docker restart open-webui
+    ```
 
     Or, restart the Open WebUI system service.
 
-    CONSOLECopy
+    ```console
+    sudo systemctl restart openwebui
+    ```
 
-    $ sudo systemctl restart openwebui
-
-45. Access Open WebUI in a new web browser.
+5. Access Open WebUI in a new web browser.
 
     ```bash
     https://openwebui.example.com
     ```
 
-46. Click the models list on the top left drop-down list and verify the new models are available.
+6. Click the models list on the top left drop-down list and verify the new models are available.
 
     ![View the installed Mistral and Llama3 models in Open WebUI](https://sjc1.vultrobjects.com/docs-main-doc-assets-1/2019/fcd4f7e7-e80b-462d-81dc-3c12325dfc0a.png)
 
-47. Select a model to use in Open WebUI. For example, select the Mistral model you installed.
+7. Select a model to use in Open WebUI. For example, select the Mistral model you installed.
 
-48. Enter a new prompt in the input field, such as `What is Vultr?` and verify that the model processes new results.
+8. Enter a new prompt in the input field, such as `What is Vultr?` and verify that the model processes new results.
 
     ![Generate results using the Mistral model](https://sjc1.vultrobjects.com/docs-main-doc-assets-1/2019/45d0476e-11ad-423d-9ed2-330706a53f13.png)
 
