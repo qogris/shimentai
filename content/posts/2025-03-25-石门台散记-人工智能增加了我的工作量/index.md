@@ -2,7 +2,7 @@
 title: 石门台散记-人工智能让我没了休闲娱乐
 date: 2025-03-25T07:09:27.274Z
 lastmod: 2025-03-25T07:09:28.873Z
-draft: true
+draft: false
 description: ""
 summary: "人工智能新技术的涌现，正在激发一个老同志源源不断的学习热情 ... "
 tags:
