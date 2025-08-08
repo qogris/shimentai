@@ -3,8 +3,8 @@ title: 材料结构与性能数据库（30+个）
 date: 2025-08-08T07:27:39.772Z
 lastmod: null
 draft: false
-description: ""
-summary: ""
+description: 探索30+个材料结构与性能数据库，助力材料研究与新材料发现，获取全面的在线资源与数据支持。
+summary: 30+个材料结构与性能数据库，助力材料研究与新材料发现，获取全面的在线资源与数据支持。
 tags:
     - 数据库资源
     - 材料科学
